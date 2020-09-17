@@ -5,3 +5,93 @@ Tlačítko Začít hrát #0197f6. Po najetí #0090e9.
 Gradient v pozadí jde z fialové #615dad do růžové #ffc8da.
 Nadpis Piškvorky je fontem Lobster*/
 
+html {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(180deg, rgba(97,93,173,1) 0%, rgba(255,200,218,1) 100%);
+}
+
+.profil {
+	margin: 50px 50px 300px 50px;
+    width: 400px;
+    border-radius: 15px;
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	background-color: #283e50;
+	color: #ffffff;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.foto {
+	display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+.obsah {
+	padding: 30px 20px 20px 20px;
+}
+
+.nadpis {
+	margin: 0 0 20px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.odkazy {
+	/*
+		Vynulujeme výchozí margin a padding, který má
+		seznam <ul> od prohlížeče.
+	*/
+	margin: 0;
+	padding: 0;
+	/* a vypneme odrážky */
+	list-style: none;
+}
+
+.odkazy li {
+	/*
+		z položek seznamu uděláme inline-blocky, takže
+		se budou na stránce skládat vedle sebe
+	*/
+	display: inline-block;
+}
+
+.pravidla {
+    background-color: #1fcca4;
+    width: 100%;
+}
+.hrat {
+    background-color: #0197f6;
+    width: 100%;
+	border-top: 1px solid #283e50;
+}
+
+.odkazy a {
+	/*
+		všechny odkazy (tlačítka) nastavíme na block, tj. roztáhnou
+		se na maximální šířku svého rodiče, kterou jsme nastavovali
+		položkám seznamu o kousek výše (100%, 50%, 50%)
+	*/
+	display: block;
+
+	/* text uvnitř tlačítka není nalepený na okraj */
+	padding: 10px;
+
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* při najetí na konkrétní tlačítka se změní i barva pozadí */
+.pravidla a:hover {
+	background-color: #1cbb96;
+}
+.hrat a:hover {
+	background-color: #0090e9;
+}
