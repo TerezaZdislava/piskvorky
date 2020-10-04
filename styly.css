@@ -10,11 +10,12 @@ html {
 }
 body {
     background: linear-gradient(180deg, rgba(97,93,173,1) 0%, rgba(255,200,218,1) 100%);
-    background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
 }
 
 .profil {
-	margin: 100px;
     width: 350px;
     border-radius: 8px;
 	font-family: 'Open sans', sans-serif;
@@ -75,4 +76,52 @@ body {
 }
 .hrat a:hover {
 	background-color: #0090e9;
+}
+
+/*.............pravidla............*/
+.kontejner {
+	border-radius: 8px;
+	font-family: 'Open sans', sans-serif;
+	font-size: 16px;
+	background-color: #283e50;
+	color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+	line-height: 1.6;
+	padding-top: 20px;
+}
+ol {
+	margin: 25px;
+}
+ol li {
+	padding: 10px 14px;
+}
+figure {
+	font-style: italic;
+	text-align: center;
+	margin: 0 25px 30px 25px;
+}	
+
+@media (max-width: 540px) {
+	.kontejner {
+		width: 340px;
+	}
+	.ukazka {
+		width: 100%;
+	}
+}
+@media (min-width: 540px) and (min-width: 960px) {
+	.kontejner {
+		width: 520px;
+	}
+	.ukazka {
+		width: 100%;
+	}
+}
+@media (min-width: 960px) {
+	.kontejner {
+		width: 600px;
+	}
+	.ukazka {
+		width: 100%;
+	}
 }
