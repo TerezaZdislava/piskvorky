@@ -94,6 +94,11 @@ ol {
 ol li {
 	padding: 10px 14px;
 }
+.ikonka {
+	width: 1em; height: 1em;
+	filter: invert(100%);
+
+}
 figure {
 	font-style: italic;
 	text-align: center;
@@ -107,6 +112,7 @@ figure {
 @media (max-width: 540px) {
 	.kontejner {
 		width: 340px;
+		font-size: 14px;
 	}
 	.ukazka {
 		width: 100%;
@@ -122,6 +128,7 @@ figure {
 	figure {
 		flex-basis: 45%;
 		margin: 12.5px;
+		font-size: 14px;
 	}
 	.ukazky {
 		margin: 12.5px;
@@ -130,6 +137,8 @@ figure {
 @media (min-width: 960px) {
 	.kontejner {
 		width: 650px;
+		font-size: 16px;
+
 	}
 	.ukazka {
 		width: 100%;
@@ -137,6 +146,7 @@ figure {
 	figure {
 		flex-basis: 46%;
 		margin: 12.5px;
+		font-size: 14px;
 	}
 	.ukazky {
 		margin: 12.5px;
