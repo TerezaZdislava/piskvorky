@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahrajte si piškvorky</title>
+    <link rel="stylesheet" type="text/css" href="styly.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hra">
+        <h1 class="nadpis">Piškvorky</h1>
+        <div class="horni">
+            <p class="hraje">HRAJE <img class="ikonka" src="circle.svg" alt="kolečko"></p>
+            <div class="tlacitka">
+                <a class="domu" href="index.html"> <img class="domecek" src="domu.svg" alt="domek"> </a>
+                <a class="znovu" href="hra.html"> <img class="restart" src="restart.svg" alt="domek"> </a>
+            </div>
+        </div>
+        <div class="pole">
+            <button class="button"></button>
+        </div>
+    </div>
+<script> 
+    function multiplyNode(node, count, deep) {
+        for (var i = 0, copy; i < count - 1; i++) {
+            copy = node.cloneNode(deep);
+            node.parentNode.insertBefore(copy, node);
+        }
+    }
+    multiplyNode(document.querySelector('.button'), 100, true);
+</script>   
+<!-- zdroj kodu https://stackoverflow.com/questions/30267973/how-to-repeat-div-element-n-times-in-html/30268827 -->
+</body>
+</html>

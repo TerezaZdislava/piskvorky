@@ -152,3 +152,63 @@ figure {
 		margin: 12.5px;
 	}
 }
+/*................hra...................*/
+
+.hra {
+	display: flex;
+	max-width: 80vmin;
+	flex-direction: column;
+}
+.pole {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 80vmin;
+	background: linear-gradient(0deg, rgba(250,170,205,1) 0%, rgba(133,120,161,1) 100%);
+}
+.button {
+	width: 8vmin;
+	height: 8vmin;
+	opacity: 0.4;
+	box-sizing: border-box;
+	border: black 1px solid;
+}
+.button:hover {
+	opacity: 0.6;	
+}
+.horni {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.hraje {
+	color: white;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.tlacitka {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.domu,
+.znovu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	margin: 3px;
+	border-radius: 5px;
+}
+.znovu {
+	background-color: #1fcca4;
+}
+.domu {
+	background-color: #0197f6;
+}
+.domecek,
+.restart {
+	align-items: center;
+}
