@@ -156,7 +156,6 @@ figure {
 
 .hra {
 	display: flex;
-	max-width: 80vmin;
 	flex-direction: column;
 }
 .pole {
@@ -169,7 +168,6 @@ figure {
 	width: 8vmin;
 	height: 8vmin;
 	opacity: 0.4;
-	box-sizing: border-box;
 	border: black 1px solid;
 }
 .button:hover {
@@ -178,8 +176,6 @@ figure {
 .horni {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
 }
 .hraje {
 	color: white;
@@ -189,14 +185,12 @@ figure {
 }
 .tlacitka {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 .domu,
 .znovu {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	width: 45px;
 	height: 45px;
 	margin: 3px;
