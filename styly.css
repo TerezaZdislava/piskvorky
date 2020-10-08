@@ -205,8 +205,14 @@ figure {
 .znovu {
 	background-color: #1fcca4;
 }
+.znovu:hover {
+	background-color: #1cbb96;
+}
 .domu {
 	background-color: #0197f6;
+}
+.domu:hover {
+	background-color: #0090e9;
 }
 .domecek,
 .restart {
