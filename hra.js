@@ -190,11 +190,13 @@ const isWinningMove = (field) => {
 
 const showResult = (vyhra, symbol) => {
   if (vyhra) {
-    console.log('funguju');
     if (symbol === 'cross') {
-      window.confirm(
+      let r = confirm(
         'Vyhrál křížek. Chcete další hru, ať mu to kolečko natře?',
       );
+      if (r === true) {
+        location.reload();
+      }
     }
     if (symbol === 'circle') {
       let r = confirm(
