@@ -108,14 +108,14 @@ const isWinningMove = (field) => {
 
   let inColumn = 1;
   // Koukni nahoru
-  i = origin.column;
+  i = origin.row;
   while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
     inColumn++;
     i--;
   }
 
   // Koukni dolů
-  i = origin.column;
+  i = origin.row;
   while (
     i < boardSize - 1 &&
     symbol === getSymbol(getField(i + 1, origin.column))
